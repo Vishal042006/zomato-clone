@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Clone</title>
+
+    <link rel="icon" href="images/zomato.png">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bevan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="top-header">
+    <div class="get-app-wrapper">
+        <button class="get-app-btn" onclick="toggleAppPopup()">☞ Get the App</button>
+
+        <div class="app-popup" id="appPopup">
+            <a href="https://apps.apple.com/in/app/zomato-food-delivery-dining/id434613896" target="_blank">
+                🍎 Download on App Store
+            </a>
+
+            <a href="https://play.google.com/store/apps/details?id=com.application.zomato&hl=en_IN" target="_blank">
+                🤖 Get it on Google Play
+            </a>
+        </div>
+    </div>
+
+    <nav class="nav-auth">
+        <a href="login.html">Login</a>
+        <a href="sign.html">Sign Up</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-overlay">
+        <div class="hero-inner">
+            <h1 class="brand">zomato</h1>
+            <p class="tagline">Discover the best food & drinks in Chennai</p>
+
+            <form class="search-pill">
+                <div class="loc">
+                    <span>📍</span>
+                    <input type="text" placeholder="Custom Colony, Besant">
+                </div>
+
+                <div class="divider">|</div>
+
+                <div class="query">
+                    <span>🔍</span>
+                    <input type="search" placeholder="Search for a restaurant, cuisine or a dish">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<div class="card-section">
+    <div class="card">
+        <img src="images/food1.jpg">
+        <p>Order Food Online</p>
+    </div>
+
+    <div class="card">
+        <img src="images/food2.jpg">
+        <p>Go out for a meal</p>
+    </div>
+
+    <div class="card">
+        <img src="images/food3.jpg">
+        <p>Night Life & Clubs</p>
+    </div>
+
+    <div class="card">
+        <img src="images/food4.jpg">
+        <p>Zomato Pro</p>
+    </div>
+</div>
+
+<div class="collections-header">
+    <div class="ch-left">
+        <h1>Collections</h1>
+        <p>
+            Explore curated lists of top restaurants, cafes, pubs, and bars in Chennai, based on trends
+        </p>
+    </div>
+
+    <a class="ch-link" href="#">All Collections in Chennai →</a>
+</div>
+
+<div class="collection-cards">
+    <div class="c-card">
+        <img src="images/c1.jpg">
+        <div class="c-info">
+            <h2>Newly Opened</h2>
+            <p>5 Places ▶</p>
+        </div>
+    </div>
+
+    <div class="c-card">
+        <img src="images/c2.jpg">
+        <div class="c-info">
+            <h2>Best Of Chennai</h2>
+            <p>89 Places ▶</p>
+        </div>
+    </div>
+
+    <div class="c-card">
+        <img src="images/c3.jpg">
+        <div class="c-info">
+            <h2>Trending this week</h2>
+            <p>30 Places ▶</p>
+        </div>
+    </div>
+
+    <div class="c-card">
+        <img src="images/c4.jpg">
+        <div class="c-info">
+            <h2>Popular This Month</h2>
+            <p>24 Places ▶</p>
+        </div>
+    </div>
+</div>
+
+<section class="locations">
+    <h2>Popular Localities in and around Chennai</h2>
+
+    <div class="locations-grid">
+        <a class="pill" href="#">T.Nagar</a>
+        <a class="pill" href="#">Nungambakkam</a>
+        <a class="pill" href="#">Velachery</a>
+
+        <a class="pill" href="#">Adyar</a>
+        <a class="pill" href="#">Anna Nagar East</a>
+        <a class="pill" href="#">Thuraipakkam</a>
+
+        <a class="pill" href="#">Mylapore</a>
+        <a class="pill" href="#">Alwarpet</a>
+        <a class="pill" href="#">Sithalapakkam</a>
+
+        <a class="pill" href="#">Besant Nagar</a>
+        <a class="pill" href="#">Semmancheri</a>
+        <a class="pill" href="#">Vadapalani</a>
+
+        <a class="pill" href="#">Perungudi</a>
+        <a class="pill" href="#">Medavakkam</a>
+        <a class="pill" href="#">Egmore</a>
+
+        <a class="pill" href="#">Royapettah</a>
+        <a class="pill" href="#">Shollinganallur</a>
+        <a class="pill" href="#">Guindy</a>
+
+        <a class="pill" href="#">Kilpauk</a>
+        <a class="pill" href="#">Porur</a>
+        <a class="pill" href="#">Kodambakkam</a>
+
+        <a class="pill" href="#">Gopalapuram</a>
+        <a class="pill" href="#">Ashok Nagar</a>
+        <a class="pill" href="#">Teynampet</a>
+
+        <a class="pill" href="#">Pallavaram</a>
+        <a class="pill" href="#">Ramapuram</a>
+        <a class="pill" href="#">RA Puram</a>
+
+        <a class="pill" href="#">Chrompet</a>
+        <a class="pill" href="#">Neelangarai</a>
+        <a class="pill" href="#">Navallur</a>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-top">
+        <img src="images/logo.jpg" class="footer-logo">
+
+        <div class="footer-selects">
+            <span>📍</span>
+            <select>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Canada</option>
+                <option>Australia</option>
+            </select>
+
+            <span>🌐</span>
+            <select>
+                <option>English</option>
+                <option>Tamil</option>
+                <option>Hindi</option>
+                <option>Malayalam</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="footer-inner">
+        <div class="col">
+            <h4>Company</h4>
+            <a href="#">Who we are</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+            <a href="#">Report Fraud</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="col">
+            <h4>For Foodies</h4>
+            <a href="#">Code of Conduct</a>
+            <a href="#">Community</a>
+            <a href="#">Blogger Help</a>
+            <a href="#">Mobile Apps</a>
+        </div>
+
+        <div class="col">
+            <h4>For Restaurants</h4>
+            <a href="#">Add Restaurant</a>
+            <a href="#">Claim your Listing</a>
+            <a href="#">Business App</a>
+            <a href="#">Restaurant Widgets</a>
+            <a href="#">Products for Businesses</a>
+        </div>
+
+        <div class="col">
+            <h4>For You</h4>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Security</a>
+            <a href="#">Sitemap</a>
+        </div>
+
+        <div class="col social-col">
+            <h4>Social Links</h4>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/zomato/">
+                    <img src="images/facebook.png">
+                </a>
+                <a href="https://x.com/zomato">
+                    <img src="images/twitter.png">
+                </a>
+                <a href="https://www.instagram.com/zomato/?hl=en">
+                    <img src="images/instagram.png">
+                </a>
+            </div>
+
+            <div class="app-buttons">
+                <a href="https://apps.apple.com/in/app/zomato-food-delivery-dining/id434613896">
+                    <img src="images/appstore.png">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.application.zomato&hl=en_IN">
+                    <img src="images/playstore.png">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="footer-bottom-text">
+        By continuing past this page, you agree to our
+        <a href="#">Terms of Service</a>,
+        <a href="#">Cookie Policy</a>,
+        <a href="#">Privacy Policy</a> and
+        <a href="#">Content Policies</a>.
+        <br>
+        2008–2021 © Zomato™ Pvt Ltd. All rights reserved.
+    </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
