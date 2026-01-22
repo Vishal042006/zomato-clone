@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url("images/Bg.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-container {
+  background: white;
+  width: 360px;
+  padding: 40px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.3);
+}
+
+.brand {
+  font-size: 48px;
+  font-style: italic;
+  color: #ef4f5f;
+  margin-bottom: 10px;
+}
+
+.auth-container h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: #ef4f5f;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: #ef4f5f;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.auth-form button:hover {
+  background: #e13c4c;
+}
+
+.switch {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #555;
+}
+
+.switch a {
+  color: #ef4f5f;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.switch a:hover {
+  text-decoration: underline;
+}

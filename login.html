@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Zomato Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/zomato.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+
+<div class="auth-container">
+  <h1 class="brand">zomato</h1>
+  <h2>Login</h2>
+
+ <form class="auth-form" onsubmit="redirectHome(event)">
+  <input type="email" placeholder="Email" required>
+  <input type="password" placeholder="Password" required>
+
+  <button type="submit">Login</button>
+</form>
+
+<script>
+  function redirectHome(e) {
+    e.preventDefault();  
+    window.location.href = "index.html";
+  }
+</script>
+
+
+  <p class="switch">
+    New to Zomato?
+    <a href="sign.html">Create an account</a>
+  </p>
+</div>
+
+</body>
+</html>
